@@ -1,14 +1,14 @@
 from flask import Blueprint, render_template
 
-home = Blueprint('home', __name__)
+home_blueprint = Blueprint('home', __name__)
 
 
-@home.route('/')
-def home():
+@home_blueprint.route('/')
+def index():
     return render_template('home/index.html')
 
 
-@home.route('/home/about')
+@home_blueprint.route('/home/about')
 def about():
-    return render_template('profile/photos.html')
+    return render_template('home/about.html')
 

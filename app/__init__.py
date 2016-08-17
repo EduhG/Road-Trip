@@ -1,8 +1,8 @@
 from flask import Flask
-from .views.home import home
-from .views.profile import profile
+from .views.home import home_blueprint
+from .views.profile import profile_blueprint
 
 app = Flask(__name__)
 
-app.register_blueprint(home)
-app.register_blueprint(profile)
+app.register_blueprint(home_blueprint)
+app.register_blueprint(profile_blueprint)

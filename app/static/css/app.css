@@ -14,11 +14,11 @@ Custom Styling
 
 ===================================================================*/
 body{
-    padding: 20px;
+    padding: 5px;
 }
 
 #header {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 10px);
     width: 100%;
     background: url(../images/mt-kenya.jpg);
     background-position: center;
